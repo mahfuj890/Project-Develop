@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primary-font:'Roboto', sans-serif;
+    --secondary-font:'Lato', sans-serif;
+}
+
+/* ========== Gobal card code =========== */
+.card-code{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color:rgb(8, 240, 143);
+    text-transform: capitalize;
+}
+/* ============== Card Title ============= */
+.card-heading > h1{
+    font-size: 40px ;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: rgb(8, 240, 143);
+    border-radius: 30px;
+    box-shadow: -3px -3px 2px rgba(255,255,255, 0.3) ,
+    5px 5px 5px rgba(0,0,0, 0.2) ,
+    15px 15px 15px rgba(0,0,0, 0.2) ;
+}
+.card-heading > p{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color: white;
+    text-transform: capitalize;
+   
+}
+
+
+
+/* 01. ################# C-01. #####################  */
+.double-shadow{
+    background: #0bd8c7 !important;
+  
+    padding: 5px;
+}
+    
+
+.outer-card{
+  position: relative;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2) ,
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1) ,
+  5px 5px 15px rgba(0, 0, 0, 0.3) ,
+  -5px -5px 15px rgba(255, 255, 255, 0.1) ; 
+  border-radius: 15px;
+  /* margin: 30px; */
+  width: 20rem;
+  height: 484px;
+   
+}
+
+.main-card{
+    width: 100%;
+    height: 454px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   padding: 6px;
+ background: #5CDB95 !important;
+   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+   border-radius: 15px;
+   transition: 0.5s;
+  color: white;
+
+ border: 2px solid rgba(0, 0, 0, 0.5) !important;
+   
+}
+.title{
+    color:  rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+}
+.outer-card:hover .main-card {
+    transform: translate(-50%, -59%);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.main-card img{
+    height: 200px;
+}
+
+.social-icon{
+    text-align: center;
+}
+.social-icon ,a{
+    display: flex;
+  
+    justify-content: center;
+}
+.social-icon i{
+    font-size: 22px;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 1px solid #0a0a0a;
+   text-align: center;
+   padding: 5px;
+   color: #070707;
+   transition: 0.5s;
+   
+}
+.social-icon i:nth-child(1):hover{
+  color: #3b5998;  
+}
+.social-icon i:nth-child(2):hover{
+    color:#00acee;
+  }
+  .social-icon i:nth-child(3):hover{
+    color: #3f729b;  
+  }
+  .social-icon i:nth-child(4):hover{
+    color: #0e76a8;  
+  }
+ 
+
+
+
+
+
+/* 02. ################# C-02. #####################  */
+
+.card-animate{
+    position: relative;
+}
+
+.card1 {
+    margin-top: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.card1::before{
+    content: " ";
+    position: absolute;
+    width: 53%;
+    height: 100%;
+    background: gray;
+    opacity: 0.2;
+}
+
+
+
+.card1 img{
+    height:200px ;
+   
+}
+
+.card1  span {
+  
+    transition: 0.5s ;
+    /* opacity: 0; */
+    
+   
+}
+
+
+
+/* ============== Hover animation ============= */
+.card1  .span2 {
+  
+    transition: 0.5s ;
+    opacity: 0;
+    
+   
+}
+
+.card1:hover .span2{
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn4{
+    position: relative;
+    left: 60%;
+}
+
+/* ================= End Hover Animation ===================== */
+
+
+/* ================== top animate ================ */
+
+.card1  span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right , transparent, #1779ff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+/* ================== right animate ================ */
+
+.card1  span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to top , transparent, #1779ff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+
+/* ================== bottom animate ================ */
+.card1  span:nth-child(3){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left , transparent, #1779ff);
+    animation: animate3 1s linear infinite;
+}
+
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ================== left animate ================ */
+.card1  span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top , transparent, #1779ff);
+    animation: animate4 1s linear infinite;
+    
+}
+
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+/* 03. ################# C-03. #####################  */
+
+.mb-card03{
+  
+    position: relative;
+    
+}
+.card-main{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-shape1{
+   
+    width: 18rem;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -2px !important;
+    
+}
+
+
+.top-shape2{
+    background-color: #0bd8c7;
+    width: 13rem;
+    height: 25px;
+    border-radius: 7px 8px 3px 3px;
+   margin: auto;
+  border: 2px solid #0bd8c7;
+border-bottom-color:#5CDB95; 
+border-left-color: #5CDB95; 
+border-right-color: #5CDB95; 
+   
+
+}
+
+.top-shape1{
+    display: none;
+}
+.card-main img{
+   position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 295px;
+    padding: 0px 3px 0px 3px;
+    margin-top: -5px;
+
+ 
+  
+  
+}
+.m-content {
+    position: absolute;
+    bottom: 0px;
+    top: 270px;
+}
+
+.card-main .card-info .heading-title{
+  
+   text-align: center;
+
+
+
+}
+.heading-title > h5{
+    color: white;
+}
+.card-main:hover .heading-title {
+   
+   position:absolute;
+   top: -236px;
+   margin-left: 0px;
+   text-align: left;
+   
+   
+
+
+}
+.card-info .heading-title p{
+    margin-top: 0;
+    width: 17rem;
+    color: rgb(7, 7, 7);
+   
+    /* font-size: 15px; */
+    font-weight: 500;
+   
+  
+}
+
+
+.card-main:hover .img {
+    height: 4rem;
+    width: 4rem;
+    margin: 28px 4px 0px auto;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+   
+  
+}
+.card-main:hover .top-shape1{
+  
+    display: inline;
+   
+    
+}
+.card-main:hover{
+    border: 2px solid #5CDB95; 
+}
+
+.card-info .description{
+   /* margin-bottom: 0px; */
+   text-align: justify;
+   width: 15rem;
+   display: none;     
+}
+.card-main:hover .description{
+    display: inline;
+    position: absolute;
+    top: -177px;
+   
+}
+
+.card-footer{
+    padding-bottom: 6px;
+    display: none;
+}
+.card-main:hover .card-footer{
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    
+    width: 100%;
+}
+.card-footer ul ,li ,a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: -2px 4px 1px 4px;
+  
+   
+    
+}
+.card-footer ul  li ,a{
+   text-decoration: none;
+
+  
+    
+}
+
+
+
+
+
+
+/* ==================================== */
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* ======================================= */
+
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --preloader-color:#00ff0a;
+}
+
+
+
+
+/* ====================================== */
