@@ -28,16 +28,20 @@
     15px 15px 15px rgba(0,0,0, 0.2) ;
 }
 .card-heading > p{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     font-family: var(--secondary-font);
     color: white;
     text-transform: capitalize;
+    border-radius: 30px;
+    padding: 2px 0;
    
 }
+ /* ======== Row bg-color ============ */
+ .double-shadow , .card-row2{
+    
 
-
-
+ }
 /* 01. ################# C-01. #####################  */
 .double-shadow{
     background: #0bd8c7 !important;
@@ -435,25 +439,243 @@ border-right-color: #5CDB95;
 
 
 
-/* ==================================== */
 
-*{
+/* 06. ################# C-06. #####################  */
+.img-box img{
+    
+}
+
+.card-body6{
+    position: absolute;
+    top: 0%;
+    height: 400px;
+   /* display: none; */
+   background-color: rgb(25, 173, 218);
+ 
+  
+
+}
+
+.card6{
+    height: 410px;
+    /* transform-style: preserve-3d; */
+    /* transform: perspective(2000px); */
+    transition: 1s;
+   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+   border-left: 5px solid rgba(8, 240, 143, 0.986) !important;
+}
+
+.card6:hover{
+   
+    transform: perspective(2000px) rotate(-10deg);
+    transition: 1s;
+   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+.img-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform-origin: left;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    transition: 1s;
+}
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card6:hover .img-box{
+   
+    transform: rotateY(-135deg);
+}
+
+.card-body6 > h5{
+    font-family: var(--primary-font);
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+}
+
+.card-body6  p:nth-of-type(1) {
+    color: #c524ca;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+
+.card-body6  p:nth-of-type(2) {
+   
+    font-family: var(--secondary-font);
+    font-size: 16px;
 }
 
 
-/* ======================================= */
+.social-icon6{
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    top: 120px;
+}
+.social-icon6 a {
+    text-decoration: none !important;
+}
+.social-icon6 ,a{
+    display: flex;
+  text-decoration: none;
+    justify-content: center;
+}
+.social-icon6 i{
+    font-size: 22px;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   /* border: 1px solid #e102f5; */
+   text-align: center;
+   padding: 5px;
+   color: #0f79c0;
+   transition: 0.7s;
+  
+   
+}
+.social-icon6 i:nth-child(1):hover{
+  background-color:  #e102f5;
+  color: white;
+}
+.social-icon6 i:nth-child(2):hover{
+    color:#00acee;
+  }
+  .social-icon6 i:nth-child(3):hover{
+    color: #3f729b;  
+  }
+  .social-icon6 i:nth-child(4):hover{
+    color: #0e76a8;  
+  }
+
+  /* <!-- 07. ################# C-07. #####################   -->  */
+  .card7{
+      /* position: relative; */
+  height: 410px;
+  width: 400px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: 0.5s;
+   border: 2px solid rgb(7, 122, 230);
+
+  
+   
+   
+
+  }
+  .card7:hover{
+      /* border: none; */
+  }
+
+ .card7 .font{
+     /* position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 390px; */
+     backface-visibility: hidden;  
+     transform: rotateY(0deg);
+     /* Change Y/Z/X or Degree you will find another animation  */
+     transition: 1s;
+   
 
 
-*{
-    box-sizing: border-box;
+  }
+  .card7 .font img{
+      height: 340px;
+  }
+
+  .card7:hover .font{
+    transform: rotateY(-180deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+
+  }
+
+  .card7 .back{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    transform: rotateX(180deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+    transition: 1s;
+    background-color: rgb(7, 122, 230);
+    
+
+
 }
 
-:root{
-    --preloader-color:#00ff0a;
+.card7:hover .back{
+    transform: rotateZ(0deg); 
+    /* Change Y/Z/X or Degree you will find another animation  */
+
+  }
+
+  .card7 .back .details7{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% , -50%);
+      width: 100%;
+  }
+
+  .card7 .back .details7 h4{
+      color: whitesmoke;
+  }
+
+  .card7 .back .details7 p{
+      font-size: 17px;
+      font-weight: 400;
+  }
+  
+
+  .social-icon-7{
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+.social-icon-7 a{
+    text-decoration: none;
+    padding: 5px;
+   
+   
+}
+.social-icon-7 a:hover{
+    text-decoration: none;
+    background-color: #e91e63;
+}
+.social-icon-7 i{
+    font-size: 22px;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 1px solid #0a0a0a;
+   text-align: center;
+   padding: 5px;
+   color: rgb(255, 255, 255);
+   transition: 0.5s;
+   background-color: #262626;
+  transition: 0.5s;
+
+   
+}
+
+.social-icon-7 a:hover i{ 
+  
+    background-color: #e91e63;
 }
 
 
-
-
-/* ====================================== */

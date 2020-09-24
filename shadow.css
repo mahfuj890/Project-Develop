@@ -35,6 +35,8 @@
     font-family: var(--secondary-font);
     color: white;
     text-transform: capitalize;
+    border-radius: 30px;
+    padding: 2px 0;
    
 }
 
@@ -108,3 +110,4 @@
 }
 
 
+/* ================= circle text animation ============== */

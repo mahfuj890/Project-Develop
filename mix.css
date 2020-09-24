@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primary-font:'Roboto', sans-serif;
+    --secondary-font:'Lato', sans-serif;
+}
+/* ============== Code ============== */
+.pre-code{
+    position: relative;
+    top: 60%;
+}
+/* ========== Global card code =========== */
+.card-code{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color:rgb(8, 240, 143);
+    text-transform: capitalize;
+}
+
+/* ============== Mixed Title ============= */
+.mix > h1{
+    font-size: 40px ;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: rgb(8, 240, 143);
+    border-radius: 30px;
+    box-shadow: -3px -3px 2px rgba(255,255,255, 0.3) ,
+    5px 5px 5px rgba(0,0,0, 0.2) ,
+    15px 15px 15px rgba(0,0,0, 0.2) ;
+}
+.mix > p{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color: white;
+    text-transform: capitalize;
+    position: relative; 
+    /* for preloader 2 center */
+   
+}
+
+.mixed{
+   
+}
+/* <!-- 01. ################# PL-01. #####################   --> */
+.circle-main{
+    position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1D1E22;
+}
+.circle{
+    transform-style: preserve-3d;
+    animation: 8s rotating linear infinite;
+  }
+  
+  @keyframes rotating{
+    0%{
+      transform: perspective(100px) rotateY(360deg) rotateX(15deg);
+    }
+    100%{
+      transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+    }
+  }
+  
+  .char{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #35146f;
+    font-size: 4em;
+    padding: 5px 12px;
+    border-top:4px solid #1D1E22;
+    border-bottom: 4px solid #1D1E22;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index) * 12deg))
+               translateZ(250px);
+  }
+  

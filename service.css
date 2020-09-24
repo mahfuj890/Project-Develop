@@ -35,6 +35,8 @@
     font-family: var(--secondary-font);
     color: white;
     text-transform: capitalize;
+    border-radius: 30px;
+    padding: 2px 0;
    
 }
 
@@ -177,4 +179,35 @@
 }
 
 
-/* 01. ================= SC-01 ================ */
+/* 03. ================= SC-03 ================ */
+.service-card-3-row{
+    /* position: relative; */
+}
+.service-card-3{
+   background-color: rgb(15, 187, 240);
+height: 250px;
+}
+.service-card-3-img{
+    position: relative;
+    z-index: 3;
+    height: 250px;
+    background-color: rgb(15, 187, 240);
+}
+
+.service-body-3{
+    position: relative;
+    z-index: 2;
+/* display: none; */
+opacity: 0;
+    transform: translateY(-100px);
+    background-color: rgb(15, 187, 240);
+    transition: 0.8s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.service-card-3:hover .service-body-3{
+    /* display: inline; */
+    transform: translateY(0px);
+    opacity: 1;
+  
+}

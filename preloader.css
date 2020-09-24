@@ -40,6 +40,8 @@
     text-transform: capitalize;
     position: relative; 
     /* for preloader 2 center */
+    border-radius: 30px;
+    padding: 2px 0;
    
 }
 
@@ -353,6 +355,3 @@
         transform: scale(0);
     }
 }
-
-
-
