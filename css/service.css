@@ -1,194 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Lato', sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
 }
-
-
 
 /* ========== Gobal card code =========== */
 .card-code {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--secondary-font);
-    color: rgb(8, 240, 143);
-    text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  color: #08f08f;
+  text-transform: capitalize;
 }
-
 
 /* ============== Service Card Title ============= */
-.service-card-heading>h1 {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: var(--primary-font);
-    color: rgb(8, 240, 143);
-    border-radius: 30px;
-    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
-        5px 5px 5px rgba(0, 0, 0, 0.2),
-        15px 15px 15px rgba(0, 0, 0, 0.2);
+.service-card-heading > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: #08f08f;
+  border-radius: 30px;
+  -webkit-box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
-.service-card-heading>p {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--secondary-font);
-    color: white;
-    text-transform: capitalize;
-    border-radius: 30px;
-    padding: 2px 0;
-
+.service-card-heading > p {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 30px;
+  padding: 2px 0;
 }
 
 .service-bg {
-    background: rgb(41, 43, 43);
+  background: #292b2b;
 }
 
 /* ==================== Service ==================== */
-
 /* 01. ################# SC-01. #####################  */
 .double-shadow {
-    background: #1e1f20;
-    padding: 5px;
+  background: #1e1f20;
+  padding: 5px;
 }
 
 .service-icon {
-    position: relative;
-    left: 50%;
-    top: 5%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    display: flex;
-
+  position: relative;
+  left: 50%;
+  top: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .service-icon i {
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-
-
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
 }
 
 .service-icon h1 {
-    font-size: 50px;
-
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    right: 1%;
-    left: 99%;
-    padding-left: 20px;
-    opacity: 0.7;
-    font-weight: bold;
-
-
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 1%;
+  left: 99%;
+  padding-left: 20px;
+  opacity: 0.7;
+  font-weight: bold;
 }
 
 .outer-card2 {
-    position: relative;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-        5px 5px 15px rgba(0, 0, 0, 0.3),
-        -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    margin: 30px;
-    width: 20rem;
-    height: 380px;
-    left: 50%;
-    transform: translateX(-50%);
-
+  position: relative;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  width: 20rem;
+  height: 380px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .main-card2 {
-    width: 100%;
-    height: 350px;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 6px;
-    background: #2a2b2f !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    transition: 0.5s;
-
-
-    border: 2px solid rgba(0, 0, 0, 0.5) !important;
-
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 6px;
+  background: #2a2b2f !important;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .outer-card2:hover .main-card2 {
-    transform: translate(-50%, -59%);
-    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-50%, -59%);
+          transform: translate(-50%, -59%);
+  -webkit-box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
 }
 
 .service-content1 h4 {
-    text-align: center;
-    margin-top: 15px;
-    color: white;
-
+  text-align: center;
+  margin-top: 15px;
+  color: white;
 }
 
 .service-content1 p {
-    color: rgb(126, 150, 168);
+  color: #7e96a8;
 }
 
 .service-content1 .button2 {
-
-    text-align: end;
-
-
+  text-align: end;
 }
-
-
-
 
 /* 02. ================= SC-02 ================ */
 .service-card-3-row {
-    /* position: relative; */
+  /* position: relative; */
 }
 
 .service-card-3 {
-    background-color: rgb(15, 187, 240);
-    height: 250px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  background-color: #0fbbf0;
+  height: 250px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .service-card-3-img {
-    position: relative;
-    z-index: 3;
-    height: 250px;
-    background-color: rgb(15, 187, 240);
+  position: relative;
+  z-index: 3;
+  height: 250px;
+  background-color: #0fbbf0;
 }
 
 .service-body-3 {
-    position: relative;
-    z-index: 2;
-    /* display: none; */
-    opacity: 0;
-    transform: translateY(-100px);
-    background-color: rgb(15, 187, 240);
-    transition: 0.8s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  /* display: none; */
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  background-color: #0fbbf0;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .service-card-3:hover .service-body-3 {
-    /* display: inline; */
-    transform: translateY(0px);
-    opacity: 1;
-
+  /* display: inline; */
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
 }
+/*# sourceMappingURL=service.css.map */

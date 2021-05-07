@@ -1,292 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 :root {
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Lato', sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
 }
 
 /* ========== Gobal card code =========== */
 .card-code {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--secondary-font);
-    color: rgb(8, 240, 143);
-    text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  color: #08f08f;
+  text-transform: capitalize;
 }
-
 
 /* ============== Service Card Title ============= */
-.hero-card-heading>h1 {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: var(--primary-font);
-    color: rgb(8, 240, 143);
-    border-radius: 30px;
-    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
-        5px 5px 5px rgba(0, 0, 0, 0.2),
-        15px 15px 15px rgba(0, 0, 0, 0.2);
+.hero-card-heading > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: #08f08f;
+  border-radius: 30px;
+  -webkit-box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero-card-heading>p {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--secondary-font);
-    color: white;
-    text-transform: capitalize;
-    border-radius: 30px;
-    padding: 2px 0;
-
+.hero-card-heading > p {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 30px;
+  padding: 2px 0;
 }
-
-
 
 /* ==================== Hero Section ==================== */
-
 /* 01. ################# HS-01. #####################  */
 .sticky-header {
-    position: relative;
-    height: 70vh;
-    overflow: scroll;
-
-
-
+  position: relative;
+  height: 70vh;
+  overflow: scroll;
 }
 
-.sticky1>h3 {
-    /* width:0px; */
-    padding: 1px 10px;
-    min-height: 45px;
-    position: sticky;
-    /*tricks */
-    top: 0px;
-    font-size: 2rem;
-    font-weight: 400;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: var(--primary-font);
-
-
+.sticky1 > h3 {
+  /* width:0px; */
+  padding: 1px 10px;
+  min-height: 45px;
+  position: -webkit-sticky;
+  position: sticky;
+  /*tricks */
+  top: 0px;
+  font-size: 2rem;
+  font-weight: 400;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: var(--primary-font);
 }
 
-.sticky1>p {
-    margin-top: 10px;
-    color: rgba(252, 252, 252, 0.2);
+.sticky1 > p {
+  margin-top: 10px;
+  color: rgba(252, 252, 252, 0.2);
 }
 
-.sticky1>h3:nth-child(1) {
-    background-color: rgba(9, 192, 248, 0.7);
+.sticky1 > h3:nth-child(1) {
+  background-color: rgba(9, 192, 248, 0.7);
 }
 
 /* <!--02. ######################## HS-02 #############  --> */
-.d3-main-cube-row {}
-
 .d3-cube1-main {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    /* object-fit: cover; */
-
-
-
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* object-fit: cover; */
 }
 
-.d3-cube1-main>video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    /* height: 100%; */
-    filter: blur(5px);
+.d3-cube1-main > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  /* height: 100%; */
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 .d3-cube1 {
-    position: absolute;
-    top: calc(50% -200px);
-    left: calc(50% 200px);
-    width: 250px;
-    height: 250px;
-    transform-style: preserve-3d;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: calc(50% -200px);
+  left: calc(50% 200px);
+  width: 250px;
+  height: 250px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .d3-cube1 .d3-cube1-sub {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-
-    transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+          transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
 }
 
 .d3-cube1-sub span {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
 }
 
 .d3-cube1-sub span video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .d3-cube1-sub span:nth-child(1) {
-    /* transform: rotateX(0deg) translate3d(0px,0px,200px); */
-    transform: rotateX(0deg) translate3d(0px, -2px, 150px);
+  /* transform: rotateX(0deg) translate3d(0px,0px,200px); */
+  -webkit-transform: rotateX(0deg) translate3d(0px, -2px, 150px);
+          transform: rotateX(0deg) translate3d(0px, -2px, 150px);
 }
 
 .d3-cube1-sub span:nth-child(2) {
-    /* transform: rotateY(90deg) translate3d(0px,0px,-200px);  */
-    transform: rotateY(90deg) translate3d(-17px, 1px, -121px);
+  /* transform: rotateY(90deg) translate3d(0px,0px,-200px);  */
+  -webkit-transform: rotateY(90deg) translate3d(-17px, 1px, -121px);
+          transform: rotateY(90deg) translate3d(-17px, 1px, -121px);
 }
 
-.d3-cube1-sub span:nth-child(2)>video {
-    transform: rotateY(180deg);
+.d3-cube1-sub span:nth-child(2) > video {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .d3-cube1-sub span:nth-child(3) {
-    /* transform: rotateX(90deg) translate3d(0px,0px,200px);  */
-    transform: rotateX(90deg) translate3d(15px, -4px, 116px);
+  /* transform: rotateX(90deg) translate3d(0px,0px,200px);  */
+  -webkit-transform: rotateX(90deg) translate3d(15px, -4px, 116px);
+          transform: rotateX(90deg) translate3d(15px, -4px, 116px);
 }
 
-
 /* ========================== 2nd row hero section ============= */
-
-
 /* --------------------- Dot Background ------------------- */
 .dot_bg_main_section {
-    position: relative;
-    width: 100%;
-    height: 28rem;
-    height: 28rem;
-    background: #001300;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  height: 28rem;
+  background: #001300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .dot_bg_main_section:hover {
-    animation: bg-dot-color-change 5s linear infinite;
-    -webkit-animation: bg-dot-color-change 5s linear infinite;
+  animation: bg-dot-color-change 5s linear infinite;
+  -webkit-animation: bg-dot-color-change 5s linear infinite;
+}
+
+@-webkit-keyframes bg-dot-color-change {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
 }
 
 @keyframes bg-dot-color-change {
-    0% {
-        filter: hue-rotate(0deg);
-        -webkit-filter: hue-rotate(0deg);
-    }
-
-    100% {
-        filter: hue-rotate(360deg);
-        -webkit-filter: hue-rotate(360deg);
-    }
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
 }
 
 .dot_bg_main_section .dot_bgs {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 
 .dot_bg_main_section .dot_bgs::before {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #00ff0a;
-    transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    pointer-events: none;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00ff0a;
+  transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+          box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  pointer-events: none;
 }
 
 .dot_bg_main_section .dot_bgs:hover::before {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: 0s;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    -ms-transition: 0s;
-    -o-transition: 0s;
-
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
 }
 
 /* <!-- --------------------- Mask Text Background Image ------------------- --> */
 .mask_bg_img_main_area {
-    height: 20rem;
-    overflow: scroll;
+  height: 20rem;
+  overflow: scroll;
 }
 
 .fire_data h1 {
-    text-align: center;
-    font-size: calc(9vw + 16px);
-    text-transform: uppercase;
-    font-weight: 800;
-    background-repeat: repeat;
-    background-attachment: fixed;
-
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
+  text-align: center;
+  font-size: calc(9vw + 16px);
+  text-transform: uppercase;
+  font-weight: 800;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fire_data p {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .fire_data:nth-child(1) h1 {
-    background-image: url('/imgs/abstract-3629844_640.jpg');
+  background-image: url("/imgs/abstract-3629844_640.jpg");
 }
 
 .fire_data:nth-child(2) h1 {
-    background-image: url('/imgs/ice-2062433_640.jpg');
-
+  background-image: url("/imgs/ice-2062433_640.jpg");
 }
 
 .fire_data:nth-child(3) h1 {
-    background-image: url('/imgs/lotus-1205631_640.jpg');
+  background-image: url("/imgs/lotus-1205631_640.jpg");
 }
 
 .fire_data:nth-child(4) h1 {
-    background-image: url('/imgs/road-1072821_640.jpg');
+  background-image: url("/imgs/road-1072821_640.jpg");
 }
+/*# sourceMappingURL=hero-section.css.map */

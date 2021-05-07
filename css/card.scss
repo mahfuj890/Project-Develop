@@ -1,0 +1,752 @@
+/* 01. ################# C-01. #####################  */
+.double-shadow {
+    background: #0bd8c7 !important;
+
+    padding: 5px;
+}
+
+
+.outer-card {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    /* margin: 30px; */
+    width: 20rem;
+    height: 484px;
+
+}
+
+.main-card {
+    width: 100%;
+    height: 454px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px;
+    background: #5CDB95 !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: 0.5s;
+    color: white;
+
+    border: 2px solid rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+}
+
+.outer-card:hover .main-card {
+    transform: translate(-50%, -59%);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.main-card img {
+    height: 200px;
+}
+
+.social-icon {
+    text-align: center;
+}
+
+.social-icon,
+a {
+    display: flex;
+
+    justify-content: center;
+}
+
+.social-icon i {
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    padding: 5px;
+    color: #070707;
+    transition: 0.5s;
+
+}
+
+.social-icon i:nth-child(1):hover {
+    color: #3b5998;
+}
+
+.social-icon i:nth-child(2):hover {
+    color: #00acee;
+}
+
+.social-icon i:nth-child(3):hover {
+    color: #3f729b;
+}
+
+.social-icon i:nth-child(4):hover {
+    color: #0e76a8;
+}
+
+
+/* 02. ################# C-02. #####################  */
+
+.card-animate {
+    position: relative;
+}
+
+.card1 {
+    margin-top: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.card1::before {
+    content: " ";
+    position: absolute;
+    width: 53%;
+    height: 100%;
+    background: gray;
+    opacity: 0.2;
+}
+
+
+
+.card1 img {
+    height: 200px;
+
+}
+
+.card1 span {
+
+    transition: 0.5s;
+    /* opacity: 0; */
+
+
+}
+
+
+
+/* ============== Hover animation ============= */
+.card1 .span2 {
+
+    transition: 0.5s;
+    opacity: 0;
+
+
+}
+
+.card1:hover .span2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn4 {
+    position: relative;
+    left: 60%;
+}
+
+/* ================= End Hover Animation ===================== */
+
+
+/* ================== top animate ================ */
+
+.card1 span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* ================== right animate ================ */
+
+.card1 span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+/* ================== bottom animate ================ */
+.card1 span:nth-child(3) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: animate3 1s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ================== left animate ================ */
+.card1 span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate4 1s linear infinite;
+
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+/* 03. ################# C-03. #####################  */
+
+.mb-card03 {
+
+    position: relative;
+
+}
+
+.card-main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-shape1 {
+
+    width: 18rem;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -2px !important;
+
+}
+
+
+.top-shape2 {
+    background-color: #0bd8c7;
+    width: 13rem;
+    height: 25px;
+    border-radius: 7px 8px 3px 3px;
+    margin: auto;
+    border: 2px solid #0bd8c7;
+    border-bottom-color: #5CDB95;
+    border-left-color: #5CDB95;
+    border-right-color: #5CDB95;
+
+
+}
+
+.top-shape1 {
+    display: none;
+}
+
+.card-main img {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 295px;
+    padding: 0px 3px 0px 3px;
+    margin-top: -5px;
+
+
+
+
+}
+
+.m-content {
+    position: absolute;
+    bottom: 0px;
+    top: 270px;
+}
+
+.card-main .card-info .heading-title {
+
+    text-align: center;
+
+
+
+}
+
+.heading-title>h5 {
+    color: white;
+}
+
+.card-main:hover .heading-title {
+
+    position: absolute;
+    top: -236px;
+    margin-left: 0px;
+    text-align: left;
+
+
+
+
+}
+
+.card-info .heading-title p {
+    margin-top: 0;
+    width: 17rem;
+    color: rgb(7, 7, 7);
+
+    /* font-size: 15px; */
+    font-weight: 500;
+
+
+}
+
+
+.card-main:hover .img {
+    height: 4rem;
+    width: 4rem;
+    margin: 28px 4px 0px auto;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+
+
+}
+
+.card-main:hover .top-shape1 {
+
+    display: inline;
+
+
+}
+
+.card-main:hover {
+    border: 2px solid #5CDB95;
+}
+
+.card-info .description {
+    /* margin-bottom: 0px; */
+    text-align: justify;
+    width: 15rem;
+    display: none;
+}
+
+.card-main:hover .description {
+    display: inline;
+    position: absolute;
+    top: -177px;
+
+}
+
+.card-footer {
+    padding-bottom: 6px;
+    display: none;
+}
+
+.card-main:hover .card-footer {
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+
+    width: 100%;
+}
+
+.card-footer ul,
+li,
+a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: -2px 4px 1px 4px;
+
+
+
+}
+
+.card-footer ul li,
+a {
+    text-decoration: none;
+
+
+
+}
+
+/* 05. ################# C-05. #####################  */
+.img-toggle-01 {
+    position: relative;
+}
+
+.img-toggle-01 img {
+    height: 322px;
+}
+
+.toggle-btn-1 {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 154px;
+    right: 10px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.toggle-btn-1 span {
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 0px 0px red;
+}
+
+.toggle_innter_btn-1 {
+    background-color: rgb(22, 194, 51);
+    width: 50px;
+    position: absolute;
+    top: 0%;
+    z-index: 100;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.toggle_innter_btn-1:hover {
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: 0vh;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+/* 06. ################# C-06. #####################  */
+
+
+.card-body6 {
+    position: absolute;
+    top: 0%;
+    height: 400px;
+    /* display: none; */
+    background-color: rgb(25, 173, 218);
+
+
+
+}
+
+.card6 {
+    height: 410px;
+    /*transform-style: preserve-3d;
+   */
+    /*transform: perspective(2000px);
+   */
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid rgba(8, 240, 143, 0.986) !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.card6:hover {
+
+    transform: perspective(2000px) rotate(-10deg);
+    transition: 1s;
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.img-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform-origin: left;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card6:hover .img-box {
+
+    transform: rotateY(-135deg);
+}
+
+.card-body6>h5 {
+    font-family: var(--primary-font);
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+}
+
+.card-body6 p:nth-of-type(1) {
+    color: #c524ca;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+
+.card-body6 p:nth-of-type(2) {
+
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+
+
+.social-icon6 {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    top: 120px;
+}
+
+.social-icon6 a {
+    text-decoration: none !important;
+}
+
+.social-icon6,
+a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.social-icon6 i {
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* border: 1px solid #e102f5; */
+    text-align: center;
+    padding: 5px;
+    color: #0f79c0;
+    transition: 0.7s;
+
+
+}
+
+.social-icon6 i:nth-child(1):hover {
+    background-color: #e102f5;
+    color: white;
+}
+
+.social-icon6 i:nth-child(2):hover {
+    color: #00acee;
+}
+
+.social-icon6 i:nth-child(3):hover {
+    color: #3f729b;
+}
+
+.social-icon6 i:nth-child(4):hover {
+    color: #0e76a8;
+}
+
+/* <!-- 07. ################# C-07. #####################   -->  */
+.card7 {
+    /* position: relative; */
+    height: 410px;
+    width: 400px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: 0.5s;
+    border: 2px solid rgb(7, 122, 230);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+
+
+}
+
+/* .card7:hover {
+    /border: none;
+}
+ */
+.card7 .font {
+    /* position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 390px; */
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+    transition: 1s;
+
+
+
+}
+
+.card7 .font img {
+    height: 340px;
+}
+
+.card7:hover .font {
+    transform: rotateY(-180deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+
+}
+
+.card7 .back {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+    transition: 1s;
+    background-color: rgb(7, 122, 230);
+
+
+
+}
+
+.card7:hover .back {
+    transform: rotateZ(0deg);
+    /* Change Y/Z/X or Degree you will find another animation  */
+
+}
+
+.card7 .back .details7 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.card7 .back .details7 h4 {
+    color: whitesmoke;
+}
+
+.card7 .back .details7 p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.social-icon-7 {
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.social-icon-7 a {
+    text-decoration: none;
+    padding: 5px;
+
+
+}
+
+.social-icon-7 a:hover {
+    text-decoration: none;
+    background-color: #e91e63;
+}
+
+.social-icon-7 i {
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    background-color: #262626;
+    transition: 0.5s;
+
+
+}
+
+.social-icon-7 a:hover i {
+
+    background-color: #e91e63;
+}

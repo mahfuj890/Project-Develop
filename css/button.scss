@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Lato', sans-serif;
+    --primary-color: #0275d8;
+    --success-color: #5cb85c;
+    --info-color: #5bc0de;
+    --warning-color: #f0ad4e;
+    --danger-color: ##d534f;
+    --dark-color: ##292b2c;
+    --white-color: ##f7f7f7;
+
+
+
+}
+
+/* ========== Gobal card code =========== */
+.button-code {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color: rgb(8, 240, 143);
+    text-transform: capitalize;
+}
+
+/* ============== button Title ============= */
+.button-heading>h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: rgb(8, 240, 143);
+    border-radius: 30px;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        5px 5px 5px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-heading>p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    color: white;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 2px 0;
+
+}
+
+/* ================== button global =========== */
+
+.btn1-row,
+.btn2-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 01 ================= B:01 ============ */
+.btn1-main-row {
+    position: relative;
+
+}
+
+.btn1 {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    /* transition: 5s; */
+}
+
+.btn1:hover {
+    -webkit-box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+}
+
+
+
+/* 02 ================= B:02 ============ */
+
+.btn1-row>.btn-22 {
+    /* background-color: rgb(0, 0, 0)!important;   */
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-family: var(--primary-font);
+
+
+}
+
+.btn1-row .btn-22::before {
+    content: " ";
+    position: absolute;
+    ;
+    top: -1px;
+    left: -1px;
+    background-color: rgb(0, 173, 253);
+    width: 94px;
+    /* height: 39px; */
+    height: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.4s ease-in-out;
+
+
+
+
+}
+
+.btn1-row .btn-22:hover::before {
+    height: 39px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+    color: white !important;
+}
+
+.btn1-row .btn-22:hover {
+    color: white !important;
+}
+
+
+/* 02 ================= B:03 ============ */
+
+.btn1-row>.btn-3 {
+    /* background-color: rgb(0, 0, 0)!important;   */
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-family: var(--primary-font);
+
+
+}
+
+.btn1-row .btn-3::before {
+    content: " ";
+    position: absolute;
+    ;
+    /* top: 30px; */
+    left: -1px;
+    bottom: 0px;
+    background-color: rgb(0, 173, 253);
+    width: 94px;
+    /* height: 39px; */
+    height: 10px;
+    border-radius: 50% 50% 0 0;
+    transition: 0.4s ease-in-out;
+
+
+
+
+}
+
+.btn1-row .btn-3:hover::before {
+    height: 39px;
+    border-radius: 0% 0% 0 0;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+    color: white !important;
+}
+
+.btn1-row .btn-3:hover {
+    color: white !important;
+}
+
+/* .btn1-row .btn-3{
+    border: 5px solid rgba(131,58,180,1);
+
+animation: border-animate1 5s linear infinite;
+}
+@keyframes border-animate1{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+} */
+
+
+
+/* 05 ================= B:05 ============ */
+.btn-5 {
+    background: linear-gradient(30deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px !important;
+    font-family: var(--primary-font) !important;
+    color: white !important;
+
+    /* filter: hue-rotate( 120deg); */
+}
+
+.btn-5::before {
+    content: " d";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 100%;
+    border-radius: 30px;
+    transition: 0.8s;
+    opacity: 0;
+
+
+}
+
+.btn-5:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    -webkit-filter: blur(20px);
+}
+
+.btn-5:hover {
+    animation: animate-btn5 3s linear infinite;
+    transition: 1s ease-in-out;
+}
+
+@keyframes animate-btn5 {
+    0% {
+        background-size: 0%;
+    }
+
+    100% {
+        background-size: 0%;
+    }
+
+}
+
+
+/* 06.============== Button 6 =========== */
+.btn6 {
+    position: relative;
+    display: inline;
+
+    background: linear-gradient(90deg, #0162c8, #55e7fc) !important;
+}
+
+.span-btn6 {
+
+    pointer-events: none;
+
+    background: #fff;
+    /* animation: btn66 1s linear infinite; */
+}
+
+@keyframes btn66 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+.btn666 {
+    -webkit-box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -200px -200px 0px 166px rgba(0, 0, 0, 0.75);
+    transition: 10s;
+}
