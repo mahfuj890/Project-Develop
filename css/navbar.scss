@@ -1,0 +1,371 @@
+$dropdown_break_max_width: 991px;
+$dropdown_break_min_width: 991px;
+
+/*============= 01. Navbar 01 ==============  */
+.navbar_wrapper01 {
+  margin: 10px 0;
+  position: relative;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+  .nav_menu_area {
+    @media (max-width: $dropdown_break_max_width) {
+      /* style for mobile menu items and simple animation using transition */
+      position: absolute;
+      background: red;
+      width: 0;
+      left: -10rem; //left animation
+      top: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      /* NB: you can alignment here or parent column usign flex or position */
+      @media (max-width: $dropdown_break_max_width) {
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    .dropdown_list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .dropdown_items_area {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        @media (min-width: $dropdown_break_min_width) {
+          position: absolute;
+          top: 50px;
+          opacity: 0;
+          visibility: hidden;
+          min-width: 200px;
+          display: flex;
+          align-items: flex-start;
+          background-color: white;
+          /* Here you can add animation using hegiht or width in transition */
+        }
+
+        @media (max-width: $dropdown_break_max_width) {
+          display: none;
+        }
+      }
+
+      @media (min-width: $dropdown_break_min_width) {
+        &:hover .dropdown_items_area {
+          opacity: 1;
+          visibility: visible;
+          top: 20px;
+        }
+      }
+
+      .dropdown_active {
+        @media (max-width: $dropdown_break_max_width) {
+          display: inline;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+
+  .navbar_active {
+       /* when user click and display nav menu items   */
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    @media (max-width: $dropdown_break_max_width) {
+      left: 0;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .navbar_icon {
+       /* when user click and display or hide nav icon    */
+    display: none;
+
+    @media (max-width: $dropdown_break_max_width) {
+      display: inline;
+    }
+
+    .times_icon {
+      display: none;
+    }
+  }
+
+  .header_icon {
+    .bar_icon {
+      @media (max-width: $dropdown_break_max_width) {
+        display: none;
+      }
+    }
+
+    .times_icon {
+      @media (max-width: $dropdown_break_max_width) {
+        display: inline;
+        top: 10px;
+      }
+    }
+  }
+}
+
+$dropdown_break_max_width: 991px;
+$dropdown_break_min_width: 991px;
+
+/*============= 03. Navbar 03 ==============  */
+/* customize grid,flex,position and eveything, what do you want  */
+.navbar_wrapper03 {
+  margin: 10px 0;
+
+  nav {
+    position: relative;
+  }
+
+  /* customize height according to the search bar  */
+
+  .row {
+    /* customize  margin for vertically alignment */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+
+    .logo_section {
+      @media (max-width: $dropdown_break_max_width) {
+        order: 2;
+      }
+    }
+
+    .search_section {
+      @media (max-width: $dropdown_break_max_width) {
+        order: 3;
+      }
+    }
+  }
+
+  /* .menu_items_section{
+
+     } */
+  .nav_menu_area2 {
+    @media (max-width: $dropdown_break_max_width) {
+      position: absolute;
+      width: 0;
+      top: 100%;
+      left: -10rem;
+      background: rebeccapurple;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      /* NB: you can alignment here or parent column usign flex or position */
+      @media (max-width: $dropdown_break_max_width) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .dropdown_list2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .dropdown_items_area2 {
+
+        flex-direction: column;
+
+        margin: 0;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+
+        @media (min-width: $dropdown_break_min_width) {
+          position: absolute;
+          top: 100%;
+          min-width: 200px;
+
+          opacity: 0;
+          visibility: hidden;
+          display: flex !important;
+          align-items: flex-start !important;
+          background: aliceblue !important;
+          /* Here you can add animation using hegiht or width in transition */
+        }
+
+        @media (max-width: $dropdown_break_max_width) {
+          display: none;
+        }
+      }
+
+      @media (min-width: $dropdown_break_min_width) {
+        &:hover .dropdown_items_area2 {
+          opacity: 1;
+          visibility: visible;
+          top: 20px;
+        }
+      }
+
+      .dropdown_active {
+        @media (max-width: $dropdown_break_max_width) {
+          display: inline;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+
+  .navbar_active {
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar_icon2 {
+    display: none;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+
+    @media (max-width: $dropdown_break_max_width) {
+      display: inline;
+    }
+
+    .times_icon {
+      display: none;
+    }
+  }
+
+  .header_icon2 {
+    .bar_icon {
+      @media (max-width: $dropdown_break_max_width) {
+        display: none;
+      }
+    }
+
+    .times_icon {
+      @media (max-width: $dropdown_break_max_width) {
+        display: inline;
+        top: 10px;
+      }
+    }
+  }
+
+  .search_section {
+    /* With for search input box, you can use media query */
+    width: 300px;
+    .search_icon_box {
+      /* Alignment*/
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .search_icon {
+        /* search icon box style  */
+        order: 2;
+        background: rebeccapurple;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+      }
+
+      input {
+        width: 0;
+        order: 1;
+        position: absolute;
+        right: 0px;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+
+        &::-webkit-search-cancel-button {
+          /* search cancel icon display on foucs or when typing  */
+          margin-right: 30px;
+        }
+
+        /* NB:search cancel icon not working on others browser  */
+        &::-moz-search-cancel-button {
+          margin-right: 30px;
+        }
+
+        &::-ms-search-cancel-button {
+          margin-right: 30px;
+        }
+
+        &::-o-search-cancel-button {
+          margin-right: 30px;
+        }
+
+        &:focus {
+          /* remove unuseful style on  foucs or click   */
+          box-shadow: none !important;
+          outline: none !important;
+        }
+      }
+
+      .search_active {
+        /* search acive when user click  */
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.hero_wrapper {
+  background-image: url("/imgs/ice-2062433_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}

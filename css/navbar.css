@@ -1,0 +1,453 @@
+/*============= 01. Navbar 01 ==============  */
+.navbar_wrapper01 {
+  margin: 10px 0;
+  position: relative;
+}
+
+.navbar_wrapper01 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area {
+    /* style for mobile menu items and simple animation using transition */
+    position: absolute;
+    background: red;
+    width: 0;
+    left: -10rem;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.navbar_wrapper01 .nav_menu_area ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* NB: you can alignment here or parent column usign flex or position */
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar_wrapper01 .nav_menu_area .dropdown_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar_wrapper01 .nav_menu_area .dropdown_list .dropdown_items_area {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area .dropdown_list .dropdown_items_area {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: white;
+    /* Here you can add animation using hegiht or width in transition */
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area .dropdown_list .dropdown_items_area {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area .dropdown_list:hover .dropdown_items_area {
+    opacity: 1;
+    visibility: visible;
+    top: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .nav_menu_area .dropdown_list .dropdown_active {
+    display: inline;
+    margin-left: 50px;
+  }
+}
+
+.navbar_wrapper01 .navbar_active {
+  /* when user click and display nav menu items   */
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .navbar_active {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.navbar_wrapper01 .navbar_icon {
+  /* when user click and display or hide nav icon    */
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .navbar_icon {
+    display: inline;
+  }
+}
+
+.navbar_wrapper01 .navbar_icon .times_icon {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .header_icon .bar_icon {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper01 .header_icon .times_icon {
+    display: inline;
+    top: 10px;
+  }
+}
+
+/*============= 03. Navbar 03 ==============  */
+/* customize grid,flex,position and eveything, what do you want  */
+.navbar_wrapper03 {
+  margin: 10px 0;
+  /* customize height according to the search bar  */
+  /* .menu_items_section{
+
+     } */
+}
+
+.navbar_wrapper03 nav {
+  position: relative;
+}
+
+.navbar_wrapper03 .row {
+  /* customize  margin for vertically alignment */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 15px;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .row .logo_section {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .row .search_section {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 {
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: -10rem;
+    background: rebeccapurple;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+}
+
+.navbar_wrapper03 .nav_menu_area2 ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* NB: you can alignment here or parent column usign flex or position */
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.navbar_wrapper03 .nav_menu_area2 .dropdown_list2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar_wrapper03 .nav_menu_area2 .dropdown_list2 .dropdown_items_area2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 .dropdown_list2 .dropdown_items_area2 {
+    position: absolute;
+    top: 100%;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    background: aliceblue !important;
+    /* Here you can add animation using hegiht or width in transition */
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 .dropdown_list2 .dropdown_items_area2 {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 .dropdown_list2:hover .dropdown_items_area2 {
+    opacity: 1;
+    visibility: visible;
+    top: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .nav_menu_area2 .dropdown_list2 .dropdown_active {
+    display: inline;
+    margin-left: 50px;
+  }
+}
+
+.navbar_wrapper03 .navbar_active {
+  left: 0;
+  width: 100%;
+}
+
+.navbar_wrapper03 .navbar_icon2 {
+  display: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .navbar_icon2 {
+    display: inline;
+  }
+}
+
+.navbar_wrapper03 .navbar_icon2 .times_icon {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .header_icon2 .bar_icon {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_wrapper03 .header_icon2 .times_icon {
+    display: inline;
+    top: 10px;
+  }
+}
+
+.navbar_wrapper03 .search_section {
+  /* With for search input box, you can use media query */
+  width: 300px;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box {
+  /* Alignment*/
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box .search_icon {
+  /* search icon box style  */
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: rebeccapurple;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input {
+  width: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: absolute;
+  right: 0px;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  /* NB:search cancel icon not working on others browser  */
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input::-webkit-search-cancel-button {
+  /* search cancel icon display on foucs or when typing  */
+  margin-right: 30px;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input::-moz-search-cancel-button {
+  margin-right: 30px;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input::-ms-search-cancel-button {
+  margin-right: 30px;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input::-o-search-cancel-button {
+  margin-right: 30px;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box input:focus {
+  /* remove unuseful style on  foucs or click   */
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar_wrapper03 .search_section .search_icon_box .search_active {
+  /* search acive when user click  */
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero_wrapper {
+  background-image: url("/imgs/ice-2062433_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+/*# sourceMappingURL=navbar.css.map */
